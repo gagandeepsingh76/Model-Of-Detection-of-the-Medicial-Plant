@@ -1,7 +1,8 @@
 # Plant Image Classification System
 
 This system uses deep learning to classify medicinal and edible plants from images. It implements four different CNN-based models and provides functionality for both training and prediction.
-
+## 🔗 Models Access 
+- **Models** –  [Models access](https://drive.google.com/drive/folders/1uzVCHggLzrMb4uQEmgqwoUmxdl0TdfaT?usp=sharing)
 ## Setup
 
 1. Install the required dependencies:
@@ -138,4 +139,5 @@ for model_name, model_creator in models_to_train.items():
     )
     history = train_model(model, model_name, train_generator, val_generator)
     evaluate_model(model, val_generator, list(class_mapping.values()))
+
     plot_training_history(history, model_name) 
